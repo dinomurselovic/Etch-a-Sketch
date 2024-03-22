@@ -4,8 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <srcript src="app.js"></srcript>
+    <div class="main-wrapper">
+      <div class="tagline">Odin Project</div>
+      <h1>Etch-A-Sketch</h1>
+      <p>
+        Please select either 'Normal mode' or 'Rainbow mode' to begin coloring.
+      </p>
+      <div id="canvas"></div>
+      <div class="buttons-wrap">
+        <button id="btn-grid" onclick="displayGrid();">Change grid size</button>
+        <button id="btn-color">Normal mode</button>
+        <button id="btn-rainbow">Rainbow mode</button>
+        <button id="btn-erase">Erase</button>
+        <button id="btn-clear">Clear</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
